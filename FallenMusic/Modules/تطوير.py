@@ -22,11 +22,11 @@ async def maker(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "- مطور السورس .", url=f"https://t.me/rr8r9"),
+                        "🇮🇱 𓏺 𝖮َِ𝗅َِ𝗂َِ𝖵َِ𝖾𝖱 . َِ", url=f"https://t.me/LLL7P"),
                 ],
                 [
                    InlineKeyboardButton(
-                        "- قناة المطور ", url=f"https://t.me/xl444"),
+                        "𓏺 𝘢 𝘍𝘪𝘶𝘯𝘺 .", url=f"https://t.me/AAAWY"),
                 ],       
             ]
         ),
