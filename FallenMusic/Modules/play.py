@@ -61,7 +61,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
 
 @app.on_message(
-    command(["تشغيل", "vplay", "p"])
+    command(["تشغيل", "vplay", "p", "شغل"])
     & filters.group
     & ~filters.forwarded
     & ~filters.via_bot
@@ -122,13 +122,13 @@ async def play(_, message: Message):
             await app2.join_chat(invitelink)
             await asyncio.sleep(2)
             await fallen.edit_text(
-                f"{ASS_NAME} - تم الانظمام سيتم التشغيل الان ."
+                f"{ASS_NAME} - تم الانضمام سيتم التشغيل الان ."
             )
         except UserAlreadyParticipant:
             pass
         except Exception as ex:
             return await fallen.edit_text(
-                f"- فشل {BOT_NAME} في الانظمام {message.chat.title}.\n\n**السبب :** `{ex}`"
+                f"- فشل {BOT_NAME} في الانضمام {message.chat.title}.\n\n**السبب :** `{ex}`"
             )
         try:
             await app2.resolve_peer(invitelink)
